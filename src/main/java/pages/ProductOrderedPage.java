@@ -16,7 +16,7 @@ public class ProductOrderedPage extends BasePage {
         super(driver);
     }
 
-//    private By
+//   i am changed this code
     private By homepageLogo = By.xpath("//div[@class='logo pull-left']");
     private By btnProduct = By.xpath("//a[@href='/products']");
     private By searchBoxProduct = By.id("search_product");
