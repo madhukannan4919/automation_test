@@ -16,7 +16,7 @@ public class ProductOrderedPage extends BasePage {
         super(driver);
     }
 
-//  my name is madhu kannan 
+//  madhu kannan
 
     private By homepageLogo = By.xpath("//div[@class='logo pull-left']");
     private By btnProduct = By.xpath("//a[@href='/products']");
