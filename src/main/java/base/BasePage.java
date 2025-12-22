@@ -1,6 +1,7 @@
 package base;
 
 import factory.DriverFactory;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -39,6 +40,18 @@ public  class BasePage {
             actions.moveToElement(element).build().perform();
         }
 
-
+    public void scrollToElement(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
+
+    public void jsScrollUp() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0, -500);");
+    }
+
+
+
+
+}
 
