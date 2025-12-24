@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeClass;
 import pages.BrandProductPage;
 import pages.ProductOrderedPage;
 import pages.ProductReviewPage;
+import pages.ScrollFunctionPage;
 
 public class BaseTest {
 
@@ -15,6 +16,7 @@ public class BaseTest {
     public ProductOrderedPage productOrderedPage;
     public ProductReviewPage  productReviewPage;
     public BrandProductPage  brandProductPage;
+    public ScrollFunctionPage scrollFunctionPage;
 
     @BeforeClass
     public void setUp() {
