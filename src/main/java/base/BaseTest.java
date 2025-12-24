@@ -4,6 +4,7 @@ import factory.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import pages.BrandProductPage;
 import pages.ProductOrderedPage;
 import pages.ProductReviewPage;
 
@@ -13,6 +14,7 @@ public class BaseTest {
 
     public ProductOrderedPage productOrderedPage;
     public ProductReviewPage  productReviewPage;
+    public BrandProductPage  brandProductPage;
 
     @BeforeClass
     public void setUp() {
@@ -20,6 +22,7 @@ public class BaseTest {
 
         productOrderedPage = new ProductOrderedPage(driver);
         productReviewPage =new ProductReviewPage(driver);
+        brandProductPage = new BrandProductPage(driver);
     }
 
     @AfterClass
