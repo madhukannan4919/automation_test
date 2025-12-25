@@ -10,7 +10,7 @@ public class ProductReviewPage extends BasePage {
 
     public ProductReviewPage(WebDriver driver){super((driver));}
 
-    // this is for product review program
+
     private By homepageLogo = By.xpath("//div[@class='logo pull-left']");
     private By btnProduct = By.xpath("//a[@href='/products']");
     private By viewProduct = By.xpath("//a[normalize-space()='Write Your Review']");
