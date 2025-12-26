@@ -9,12 +9,18 @@ public class ScrollFunctionPageTest extends BaseTest {
 
     @Test(priority = 1)
     public void verifyTheWebsiteLaunch() {
-        productReviewPage.launchUrl();
+        scrollFunctionPage.launchUrl();
         String currentUrl = driver.getCurrentUrl();
         Assert.assertTrue(currentUrl.contains("automationexercise"),"Incorrect Url loaded!");
 
-        WebElement homeLogo = driver.findElement(productReviewPage.getHomepageLogo());
+        WebElement homeLogo = driver.findElement(scrollFunctionPage.getHomepageLogo());
         Assert.assertTrue(homeLogo.isDisplayed(),"Home logo is not displayed");
 
     }
+    @Test(priority = 2)
+    public void verifyScrollDown() {
+        scrollFunctionPage.scrollToBottomOfPage();
+        Assert.assertTrue(scrollFunctionPage.SubscriptionVisible(), "Subscription text is not visible after scrolling");
+    }
+
 }
