@@ -25,6 +25,7 @@ public class BaseTest {
         productOrderedPage = new ProductOrderedPage(driver);
         productReviewPage =new ProductReviewPage(driver);
         brandProductPage = new BrandProductPage(driver);
+        scrollFunctionPage = new ScrollFunctionPage(driver);
     }
 
     @AfterClass

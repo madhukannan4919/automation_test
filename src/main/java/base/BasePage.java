@@ -50,6 +50,11 @@ public  class BasePage {
         js.executeScript("window.scrollBy(0, -500);");
     }
 
+    public void scrollToPageEnd() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+    }
+
 
 
 
