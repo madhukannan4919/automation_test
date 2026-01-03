@@ -22,5 +22,9 @@ public class ScrollFunctionPageTest extends BaseTest {
         scrollFunctionPage.scrollToBottomOfPage();
         Assert.assertTrue(scrollFunctionPage.SubscriptionVisible(), "Subscription text is not visible after scrolling");
     }
+    @Test(priority = 3)
+    public void VerifyUpArrow() {
+        scrollFunctionPage.clickUpArrowBtn();
+    }
 
 }
