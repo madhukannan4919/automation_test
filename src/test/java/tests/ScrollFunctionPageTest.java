@@ -26,5 +26,9 @@ public class ScrollFunctionPageTest extends BaseTest {
     public void VerifyUpArrow() {
         scrollFunctionPage.clickUpArrowBtn();
     }
+    @Test(priority = 4)
+    public void VerifyAutomationText() {
+        Assert.assertTrue(scrollFunctionPage.automationText(),"Automation text is not visible after click upArrow");
+    }
 
 }

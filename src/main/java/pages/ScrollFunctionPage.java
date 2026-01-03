@@ -18,6 +18,9 @@ public class ScrollFunctionPage extends BasePage {
     @FindBy(xpath = "//i[@class='fa fa-angle-up']")
     private WebElement upArrowBtn;
 
+    @FindBy(xpath = "//div[@class='item active']//h2[contains(text(),'Full-Fledged practice website for Automation Engin')]")
+    private WebElement automationText;
+
 
     public void launchUrl() {
         launch("https://automationexercise.com");
@@ -37,6 +40,11 @@ public class ScrollFunctionPage extends BasePage {
 
     public void clickUpArrowBtn(){
         upArrowBtn.click();
+    }
+
+    public boolean automationText() {
+        return automationText.isDisplayed();
+
     }
 
 
