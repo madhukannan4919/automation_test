@@ -15,6 +15,9 @@ public class ScrollFunctionPage extends BasePage {
     @FindBy(xpath = "//h2[normalize-space()='Subscription']")
     private WebElement subscriptionText;
 
+    @FindBy(xpath = "//i[@class='fa fa-angle-up']")
+    private WebElement upArrowBtn;
+
 
     public void launchUrl() {
         launch("https://automationexercise.com");
@@ -30,6 +33,10 @@ public class ScrollFunctionPage extends BasePage {
 
     public boolean SubscriptionVisible() {
         return subscriptionText.isDisplayed();
+    }
+
+    public void clickUpArrowBtn(){
+        upArrowBtn.click();
     }
 
 
